@@ -1,4 +1,5 @@
-FROM rust:1.70-slim-bullseye
+ARG VERSION=latest
+FROM rust:$VERSION
 
 RUN set -eux; \
     apt-get update; \
