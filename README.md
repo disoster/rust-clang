@@ -3,7 +3,7 @@ Docker image for Rust compiler with libclang-dev
 
 ## How to build image
 ```
-docker build -t 'disoster/rust-clang:1.70-slim-bullseye' .
+docker build --build-arg VERSION=1.70-slim-bullseye -t 'disoster/rust-clang:1.70-slim-bullseye' .
 ```
 
 ## How to use image
